@@ -7,9 +7,10 @@ on:
       - main
   schedule:
     - cron: "0 0 * * *"
-
+ 
 jobs:
   devcard:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: devcard
